@@ -57,4 +57,4 @@ We encountered two errors which revealed problems with our current referee syste
 The first error was found while testing the frame skipped accuracy for the 4p1b_01A2.m4v video. We received an accuracy value of 1.0 (which is 100% accuracy) but the .csv file was drastically different from the correct solution; this implies the referee system isn't properly checking whether the results are correct.  
   
 The second error can be shown from this error message, and also reveals an error in solution.py from code written by Ayden Kocher. We will need to meet with him to learn more about the error and resolve this issue. The error message is shown below:  
-![Error Message](errormessage1.png)
+![Error Message](C:\Users\Michael\OneDrive - purdue.edu\Desktop\OpticalFlow\errormessage1.png)
