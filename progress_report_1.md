@@ -42,8 +42,19 @@ We did have to comment out some lines of code (that were negligible to the solut
 
 | Video File    | Original Solution Accuracy | Original Solution Time | Frame Skipped Accuracy | Frame Skipped Time |
 | ------------- | -------------------------- | ---------------------- | ---------------------- | ------------------ |
-| 4p1b_01A2.m4v | 93%                        | 65.621 s               |                        | 24.151 s           |
+| 4p1b_01A2.m4v | 93%                        | 65.621 s               | ERROR                  | 24.151 s           |
 | 5p2b_01A1.m4v | 93%                        | 135.272 s              | 50%                    | 45.203 s           |
 | 5p4b_01A2.m4v | 92%                        | 97.464 s               | 73%                    | 41.653 s           |
 | 5p5b_03A1.m4v | 48%                        | 79.856 s               | 30%                    | 26.226 s           |
-| 7p3b_02M.m4v  |                            |                        |                        |                    |
+| 7p3b_02M.m4v  | ERROR                      | ERROR                  | ERROR                  | ERROR              |
+
+---  
+
+<center><h3> Errors </h3></center>
+
+We encountered two errors which revealed problems with our current referee system.  
+  
+The first error was found while testing the frame skipped accuracy for the 4p1b_01A2.m4v video. We received an accuracy value of 1.0 (which is 100% accuracy) but the .csv file was drastically different from the correct solution; this implies the referee system isn't properly checking whether the results are correct.  
+  
+The second error can be shown from this error message, and also reveals an error in solution.py from code written by Ayden Kocher. We will need to meet with him to learn more about the error and resolve this issue. The error message is shown below:  
+![Error Message](errormessage1.png)
